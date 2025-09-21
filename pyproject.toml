@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-test-base"
+version = "0.1.0"
+description = "Reusable library to load CSV-based Q/A pairs from resources for testing/flashcards"
+readme = "README.md"
+authors = [{ name = "Your Name" }]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["csv", "flashcards", "testing", "vocabulary"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://example.com/"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.include-package-data]
+value = true
