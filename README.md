@@ -19,7 +19,7 @@ pip install .
 or via VCS (after publishing):
 
 ```
-pip install git+https://github.com/you/csv-test-base.git
+pip install git+https://github.com/zlatkapod/csv-test-base.git
 ```
 
 ## Quick start
