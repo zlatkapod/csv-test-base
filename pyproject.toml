@@ -7,7 +7,7 @@ name = "csv-test-base"
 version = "0.1.0"
 description = "Reusable library to load CSV-based Q/A pairs from resources for testing/flashcards"
 readme = "README.md"
-authors = [{ name = "Your Name" }]
+authors = [{ name = "Zlata Podlucka" }]
 license = { text = "MIT" }
 requires-python = ">=3.10"
 keywords = ["csv", "flashcards", "testing", "vocabulary"]
@@ -18,13 +18,16 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://example.com/"
+Homepage = "https://github.com/zlatkapod/csv-test-base"
+Repository = "https://github.com/zlatkapod/csv-test-base"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
+include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["src"]
 
-[tool.setuptools.include-package-data]
-value = true
+[tool.setuptools.package-data]
+csv_test_base = ["resources/csv/**/*.csv", "resources/csv/*.csv"]
+
